@@ -5,7 +5,8 @@ mkdir -p ~/.local/lib/OpenUtau
 echo "Downloading OpenUtau..."
 wget -q https://github.com/stakira/OpenUtau/releases/download/0.1.565/OpenUtau-linux-x64.zip -O /tmp/ou.tar.gz --show-progress 
 echo "Installing..."
-tar xvf /tmp/ou.tar.gz -C ~/.local/lib/OpenUtau
+#tar xvf /tmp/ou.tar.gz -C ~/.local/lib/OpenUtau
+unzip /tmp/ou.tar.gz -d ~/.local/lib/OpenUtau
 echo "Retrieving icon..."
 wget -q https://raw.githubusercontent.com/stakira/OpenUtau/master/Logo/openutau.svg -O ~/.local/share/pixmaps/openutau.svg --show-progress
 echo "Marking executable..."
